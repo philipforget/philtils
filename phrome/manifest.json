@@ -1,0 +1,24 @@
+{
+	"name":         "phrome",
+	"version":      "0.1",
+	"description":  "Sometimes the web sucks",
+    //"options_page": "options.html",
+	"icons": {
+		"16":  "img/16.png",
+		"48":  "img/48.png",
+		"128": "img/128.png"
+	},
+	"background_page": "background.html",
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["js/phrome.onload.js"]
+		}
+	],
+	"permissions": [
+		"tabs",
+		"contextMenus",
+        "cookies",
+		"*://*/*"
+	]
+}
