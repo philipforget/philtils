@@ -7,9 +7,9 @@ import sys
 
 # Directory configuration
 applications_root = '/Applications'
-firefox_root      = os.path.expanduser('~/Library/Application Support/Firefox')
-profiles_root     = os.path.join(firefox_root, 'Profiles')
-ini_filemane      = os.path.join(firefox_root, 'profiles.ini')
+firefox_root = os.path.expanduser('~/Library/Application Support/Firefox')
+profiles_root = os.path.join(firefox_root, 'Profiles')
+ini_filemane = os.path.join(firefox_root, 'profiles.ini')
 
 class LaunchProfile():
     def __init__(self):
